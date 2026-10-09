@@ -12,7 +12,7 @@
       "about.title": "Sobre mim",
       "about.p1": "DevOps Engineer focado em automação e entrega contínua: pipelines de CI/CD, infraestrutura como código, containers e observabilidade, em ambientes cloud e on-premises de alto tráfego no setor de iGaming.",
       "about.p2": "Minha base veio do Suporte N2/N3 — e foi lá que aprendi a ir até a causa raiz de incidentes em produção. Hoje uso isso para construir ambientes escaláveis, seguros e altamente disponíveis, automatizando processos e reduzindo falhas operacionais.",
-      "about.s1": "anos entre suporte, operações e DevOps", "about.s2": "ambientes: dev, homolog e prod",
+      "about.s1": "anos entre suporte, operações e DevOps", "about.s2": "multicloud: Azure, AWS e OCI",
       "about.s3": "certificações e formações", "about.s4": "inglês profissional",
       "stack.title": "Stack técnica", "stack.infra": "Containers, Cloud & Linux", "stack.obs": "Observabilidade",
       "stack.alerts": "Monitoramento & Alertas", "stack.auto": "Automação & Scripting", "stack.db": "Bancos de dados",
@@ -83,7 +83,6 @@
       "contact.title": "Vamos conversar",
       "contact.lead": "Aberto a oportunidades em DevOps, SRE e Cloud — remoto ou em Recife. Respondo rápido.",
       "contact.loc": "local",
-      "footer.built": "Deploy via GitHub Pages · lcaoficial.com.br",
       "meta.title": "Lucas Alecrim · DevOps Engineer",
       "meta.desc": "Lucas Cardoso Alecrim — DevOps Engineer em Recife. CI/CD, infraestrutura como código (Terraform, Ansible), Docker, observabilidade e cloud (Azure, AWS)."
     },
@@ -97,7 +96,7 @@
       "about.title": "About me",
       "about.p1": "DevOps Engineer focused on automation and continuous delivery: CI/CD pipelines, infrastructure as code, containers and observability, across high-traffic cloud and on-premises environments in the iGaming industry.",
       "about.p2": "My foundation comes from L2/L3 Support — that's where I learned to chase production incidents down to their root cause. Today I use that to build scalable, secure and highly available environments, automating processes and reducing operational failures.",
-      "about.s1": "years across support, operations and DevOps", "about.s2": "environments: dev, staging & prod",
+      "about.s1": "years across support, operations and DevOps", "about.s2": "multicloud: Azure, AWS & OCI",
       "about.s3": "certifications & courses", "about.s4": "professional working English",
       "stack.title": "Tech stack", "stack.infra": "Containers, Cloud & Linux", "stack.obs": "Observability",
       "stack.alerts": "Monitoring & Alerting", "stack.auto": "Automation & Scripting", "stack.db": "Databases",
@@ -168,7 +167,6 @@
       "contact.title": "Let's talk",
       "contact.lead": "Open to DevOps, SRE and Cloud opportunities — remote or in Recife. I reply fast.",
       "contact.loc": "location",
-      "footer.built": "Deployed on GitHub Pages · lcaoficial.com.br",
       "meta.title": "Lucas Alecrim · DevOps Engineer",
       "meta.desc": "Lucas Cardoso Alecrim — DevOps Engineer based in Recife, Brazil. CI/CD, infrastructure as code (Terraform, Ansible), Docker, observability and cloud (Azure, AWS)."
     }
