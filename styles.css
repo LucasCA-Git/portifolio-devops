@@ -51,7 +51,7 @@ p { margin: 0 0 1rem; }
 }
 .nav.scrolled { border-bottom-color: var(--border); }
 .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; }
-.brand { font-family: var(--mono); font-weight: 600; font-size: 1.05rem; }
+.brand { font-family: var(--mono); font-weight: 600; font-size: 1.05rem; white-space: nowrap; }
 .brand .prompt { color: var(--accent); }
 .nav nav { margin-left: auto; }
 .nav-links { display: flex; gap: 26px; }
