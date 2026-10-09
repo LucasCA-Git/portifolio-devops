@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lucas Alecrim · DevOps Engineer</title>
-  <meta name="description" content="Lucas Cardoso Alecrim — DevOps Engineer em Recife. Linux, Docker, CI/CD, Ansible, Terraform, Azure, AWS e observabilidade.">
+  <meta name="description" content="Lucas Cardoso Alecrim — DevOps Engineer em Recife. CI/CD, infraestrutura como código (Terraform, Ansible), Docker, observabilidade e cloud (Azure, AWS).">
   <meta name="author" content="Lucas Cardoso Alecrim">
   <meta name="theme-color" content="#0a0e14">
   <link rel="canonical" href="https://lcaoficial.com.br/">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lcaoficial.com.br/">
   <meta property="og:title" content="Lucas Alecrim · DevOps Engineer">
-  <meta property="og:description" content="Infraestrutura híbrida, automação, CI/CD e observabilidade.">
+  <meta property="og:description" content="CI/CD, infraestrutura como código, containers e observabilidade.">
   <meta property="og:image" content="https://lcaoficial.com.br/assets/lucas.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e14'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='%2339d98a'%3E%3E_%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +33,11 @@
       <nav aria-label="Principal">
         <ul class="nav-links" id="navLinks">
           <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#devops" data-i18n="nav.devops">DevOps</a></li>
           <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
           <li><a href="#experiencia" data-i18n="nav.exp">Experiência</a></li>
           <li><a href="#formacao" data-i18n="nav.edu">Formação</a></li>
+          <li><a href="#recomendacoes" data-i18n="nav.recs">Recomendações</a></li>
           <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
         </ul>
       </nav>
@@ -55,8 +57,8 @@
       <div class="hero-text">
         <p class="eyebrow mono"><span class="dot"></span> <span data-i18n="hero.status">Disponível para novas oportunidades</span></p>
         <h1>Lucas Cardoso <span class="accent">Alecrim</span></h1>
-        <p class="role mono">DevOps Engineer · Docker · CI/CD · Linux · Ansible · Azure</p>
-        <p class="lead" data-i18n="hero.lead">Construo e sustento infraestrutura híbrida (cloud + on-premises) para plataformas de missão crítica — automatizando o que se repete e observando o que importa.</p>
+        <p class="role mono">DevOps Engineer · CI/CD · IaC · Docker · Observabilidade</p>
+        <p class="lead" data-i18n="hero.lead">Automatizo o caminho do código até a produção — pipelines de CI/CD, infraestrutura como código, containers e observabilidade — para que times de desenvolvimento entreguem com rapidez e segurança.</p>
         <div class="cta">
           <a class="btn primary" href="#contato" data-i18n="hero.cta1">Fale comigo</a>
           <a class="btn ghost" href="assets/Lucas_Alecrim_DevOps.pdf" download data-i18n="hero.cta2">Baixar CV</a>
@@ -87,11 +89,11 @@
       <h2 class="section-title"><span class="mono num">01.</span> <span data-i18n="about.title">Sobre mim</span></h2>
       <div class="about-grid">
         <div>
-          <p data-i18n="about.p1">DevOps Engineer com vivência em infraestrutura híbrida, atuando na automação, sustentação e evolução de plataformas de alto tráfego no setor de iGaming.</p>
+          <p data-i18n="about.p1">DevOps Engineer focado em automação e entrega contínua: pipelines de CI/CD, infraestrutura como código, containers e observabilidade, em ambientes cloud e on-premises de alto tráfego no setor de iGaming.</p>
           <p data-i18n="about.p2">Minha base veio do Suporte N2/N3 — e foi lá que aprendi a ir até a causa raiz de incidentes em produção. Hoje uso isso para construir ambientes escaláveis, seguros e altamente disponíveis, automatizando processos e reduzindo falhas operacionais.</p>
         </div>
         <ul class="stats">
-          <li><strong class="mono">2+</strong><span data-i18n="about.s1">anos em infraestrutura e suporte</span></li>
+          <li><strong class="mono">2+</strong><span data-i18n="about.s1">anos entre suporte, operações e DevOps</span></li>
           <li><strong class="mono">3</strong><span data-i18n="about.s2">ambientes: dev, homolog e prod</span></li>
           <li><strong class="mono">6</strong><span data-i18n="about.s3">certificações e formações</span></li>
           <li><strong class="mono">PT/EN</strong><span data-i18n="about.s4">inglês profissional</span></li>
@@ -99,24 +101,87 @@
       </div>
     </section>
 
+    <!-- DEVOPS -->
+    <section id="devops" class="section wrap">
+      <h2 class="section-title"><span class="mono num">02.</span> <span data-i18n="devops.title">DevOps na prática</span></h2>
+      <p class="lead devops-lead" data-i18n="devops.lead">Meu trabalho é encurtar e proteger o caminho entre o commit e a produção. É assim que cada etapa do ciclo aparece no meu dia a dia:</p>
+      <ol class="pipeline">
+        <li class="stage">
+          <span class="stage-k mono">01 · plan</span>
+          <h3 data-i18n="devops.plan.n">Planejar</h3>
+          <p data-i18n="devops.plan.d">Sprints e backlog junto com o time de desenvolvimento.</p>
+          <ul class="tags"><li>Scrum</li><li>Git</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">02 · code</span>
+          <h3 data-i18n="devops.code.n">Versionar</h3>
+          <p data-i18n="devops.code.d">Aplicação, configuração e infraestrutura versionadas em Git.</p>
+          <ul class="tags"><li>Git</li><li>GitHub</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">03 · build</span>
+          <h3 data-i18n="devops.build.n">Build</h3>
+          <p data-i18n="devops.build.d">Imagens Docker enxutas e reprodutíveis, com boas práticas.</p>
+          <ul class="tags"><li>Docker</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">04 · test</span>
+          <h3 data-i18n="devops.test.n">Validar</h3>
+          <p data-i18n="devops.test.d">Etapas de validação automatizadas dentro do pipeline.</p>
+          <ul class="tags"><li>CI/CD</li><li>Bash</li><li>Python</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">05 · provision</span>
+          <h3 data-i18n="devops.provision.n">Provisionar</h3>
+          <p data-i18n="devops.provision.d">Infraestrutura como código e configuração automatizada.</p>
+          <ul class="tags"><li>Terraform</li><li>Ansible</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">06 · deploy</span>
+          <h3 data-i18n="devops.deploy.n">Deploy</h3>
+          <p data-i18n="devops.deploy.d">Deploys automatizados em desenvolvimento, homologação e produção.</p>
+          <ul class="tags"><li>CI/CD</li><li>Docker Compose</li><li>Ansible</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">07 · operate</span>
+          <h3 data-i18n="devops.operate.n">Operar</h3>
+          <p data-i18n="devops.operate.d">Nginx, TLS, DNS e permissões (ACL) em servidores Linux.</p>
+          <ul class="tags"><li>Linux</li><li>Nginx</li><li>SSL/TLS</li></ul>
+        </li>
+        <li class="stage">
+          <span class="stage-k mono">08 · monitor</span>
+          <h3 data-i18n="devops.monitor.n">Observar</h3>
+          <p data-i18n="devops.monitor.d">Logs, métricas e alertas para agir antes do usuário perceber.</p>
+          <ul class="tags"><li>Grafana Loki</li><li>Datadog</li><li>Webhooks</li></ul>
+        </li>
+      </ol>
+      <p class="loop mono" data-i18n="devops.loop">↺ feedback: incidentes e métricas viram melhorias no próximo ciclo</p>
+      <ul class="principles">
+        <li><h3 data-i18n="devops.p1.t">Automatize o que se repete</h3><p data-i18n="devops.p1.d">Tarefa manual recorrente vira script, playbook ou etapa de pipeline.</p></li>
+        <li><h3 data-i18n="devops.p2.t">Causa raiz, não sintoma</h3><p data-i18n="devops.p2.d">Herança do N2/N3: incidente só fecha quando eu entendo por que aconteceu.</p></li>
+        <li><h3 data-i18n="devops.p3.t">Observabilidade primeiro</h3><p data-i18n="devops.p3.d">Logs e alertas bem feitos encurtam o tempo até a correção.</p></li>
+        <li><h3 data-i18n="devops.p4.t">Dev e Ops no mesmo time</h3><p data-i18n="devops.p4.d">Lado a lado com os devs em incidentes, deploys e otimização de produção.</p></li>
+      </ul>
+    </section>
+
     <!-- STACK -->
     <section id="stack" class="section wrap">
-      <h2 class="section-title"><span class="mono num">02.</span> <span data-i18n="stack.title">Stack técnica</span></h2>
+      <h2 class="section-title"><span class="mono num">03.</span> <span data-i18n="stack.title">Stack técnica</span></h2>
       <div class="cards">
-        <article class="card">
-          <h3 data-i18n="stack.infra">Infra &amp; Cloud</h3>
-          <ul class="tags"><li>Linux</li><li>Docker</li><li>Docker Compose</li><li>Microsoft Azure</li><li>AWS</li><li>Nginx</li><li>SSL/TLS</li><li>DNS</li><li>Networking</li></ul>
-        </article>
         <article class="card">
           <h3>CI/CD &amp; IaC</h3>
           <ul class="tags"><li>Pipelines CI/CD</li><li>Terraform</li><li>Ansible</li><li>Git</li><li>GitHub</li></ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="stack.infra">Containers, Cloud &amp; Linux</h3>
+          <ul class="tags"><li>Linux</li><li>Docker</li><li>Docker Compose</li><li>Microsoft Azure</li><li>AWS</li><li>Nginx</li><li>SSL/TLS</li><li>DNS</li><li>Networking</li></ul>
         </article>
         <article class="card">
           <h3 data-i18n="stack.obs">Observabilidade</h3>
           <ul class="tags"><li>Grafana Loki</li><li>Datadog</li><li data-i18n="stack.alerts">Monitoramento &amp; Alertas</li><li>Troubleshooting</li></ul>
         </article>
         <article class="card">
-          <h3 data-i18n="stack.auto">Automação &amp; Dev</h3>
+          <h3 data-i18n="stack.auto">Automação &amp; Scripting</h3>
           <ul class="tags"><li>Python</li><li>Node.js</li><li>TypeScript</li><li>Bash</li></ul>
         </article>
         <article class="card">
@@ -132,7 +197,7 @@
 
     <!-- EXPERIÊNCIA -->
     <section id="experiencia" class="section wrap">
-      <h2 class="section-title"><span class="mono num">03.</span> <span data-i18n="exp.title">Experiência</span></h2>
+      <h2 class="section-title"><span class="mono num">04.</span> <span data-i18n="exp.title">Experiência</span></h2>
       <ol class="timeline">
         <li class="job">
           <div class="job-head">
@@ -141,10 +206,10 @@
           </div>
           <p class="where" data-i18n="exp.j1.where">Recife, PE · Plataformas iGaming (cloud + on-premises)</p>
           <ul>
+            <li data-i18n="exp.j1.b4">Mantenho e crio pipelines de CI/CD para automação de deploys.</li>
             <li data-i18n="exp.j1.b1">Administro infraestrutura híbrida para plataformas de jogos, cobrindo desenvolvimento, homologação e produção.</li>
             <li data-i18n="exp.j1.b2">Deploys e sustentação de serviços em Docker/Compose, incluindo diagnóstico de gargalos — ex.: pico de CPU em backend Python causado por bug de truthiness em profiler customizado e logging excessivo sob carga de bots.</li>
             <li data-i18n="exp.j1.b3">Configuro e monitoro Nginx, SSL/TLS, DNS e networking em Linux, incluindo permissionamento (ACL/setfacl) para deploys.</li>
-            <li data-i18n="exp.j1.b4">Mantenho e crio pipelines de CI/CD para automação de deploys.</li>
             <li data-i18n="exp.j1.b5">Atuo junto aos times de desenvolvimento na resolução de incidentes e otimização de produção.</li>
           </ul>
         </li>
@@ -178,7 +243,7 @@
 
     <!-- FORMAÇÃO -->
     <section id="formacao" class="section wrap">
-      <h2 class="section-title"><span class="mono num">04.</span> <span data-i18n="edu.title">Formação &amp; certificações</span></h2>
+      <h2 class="section-title"><span class="mono num">05.</span> <span data-i18n="edu.title">Formação &amp; certificações</span></h2>
       <div class="edu-grid">
         <article class="card edu">
           <p class="mono kicker" data-i18n="edu.degreeTag">graduação</p>
@@ -197,9 +262,46 @@
       </div>
     </section>
 
+    <!-- RECOMENDAÇÕES -->
+    <section id="recomendacoes" class="section wrap">
+      <h2 class="section-title"><span class="mono num">06.</span> <span data-i18n="recs.title">Recomendações</span></h2>
+      <p class="lead recs-lead" data-i18n="recs.lead">O que colegas de trabalho dizem sobre mim no LinkedIn.</p>
+      <div class="recs">
+        <figure class="rec">
+          <blockquote><p data-i18n="recs.r1.q">Trabalhei com o Lucas e posso dizer que ele é um profissional muito dedicado e parceiro. Sempre foi uma pessoa sociável, que se relaciona bem com todos e está pronta para ajudar quando necessário. É esforçado, comprometido e encara os desafios com responsabilidade. Com certeza será uma ótima adição para qualquer equipe.</p></blockquote>
+          <figcaption>
+            <span class="avatar mono" aria-hidden="true">GA</span>
+            <span><strong>Guilherme Ailton</strong><span class="rec-role">Desenvolvedor Full Stack · Node.js · TypeScript · React · Docker</span><span class="rec-rel mono" data-i18n="recs.r1.rel">Trabalhou na mesma equipe · jun 2026</span></span>
+          </figcaption>
+        </figure>
+        <figure class="rec">
+          <blockquote><p data-i18n="recs.r2.q">Trabalhei diretamente com Lucas na equipe de DevOps da Xerlock. Como estagiário ele sempre foi extremamente interessado em entender os processos fim-a-fim e sempre disposto a trazer novas ideias para traçar os caminhos mais eficientes. Uma característica muito importante numa área em que automatizamos e damos manutenção na infraestrutura que funciona de plataforma para toda a aplicação. Além da parte técnica, Lucas tem uma habilidade intersocial ímpar, sempre com muita empatia e vontade genuína de colaborar com o ambiente de trabalho e com as tarefas desenvolvidas pelo time.</p></blockquote>
+          <figcaption>
+            <span class="avatar mono" aria-hidden="true">MB</span>
+            <span><strong>Marcos Barros</strong><span class="rec-role">Engenheiro de Plataforma · DevOps · Kubernetes · Terraform</span><span class="rec-rel mono" data-i18n="recs.r2.rel">Sênior na equipe de DevOps da Xerlock · jun 2026</span></span>
+          </figcaption>
+        </figure>
+        <figure class="rec">
+          <blockquote><p data-i18n="recs.r3.q">Profissional extremamente dedicado, capaz de se entregar por completo ao que lhe é pedido, diante da sua função. Alguém capaz de proporcionar um ambiente amigável e empenhado em cumprir demandas com seus colegas.</p></blockquote>
+          <figcaption>
+            <span class="avatar mono" aria-hidden="true">CC</span>
+            <span><strong>Clediuel Carneiro</strong><span class="rec-role">Analista de Service Desk · Suporte N1/N2 · Gestão de Incidentes</span><span class="rec-rel mono" data-i18n="recs.r3.rel">Trabalhou na mesma equipe · mar 2024</span></span>
+          </figcaption>
+        </figure>
+        <figure class="rec">
+          <blockquote><p data-i18n="recs.r4.q">Lucas é um profissional muito competente e com vasta experiência. Ele é capaz de resolver problemas complexos tanto em hardwares como em softwares. É um colaborador valioso em qualquer ambiente de trabalho e em qualquer equipe. Ele é paciente, trabalha bem em equipe, é focado e empenhado. Além disso, ele é um excelente comunicador, tem uma grande capacidade de resolver problemas e é muito organizado em sua gestão de tempo pessoal.</p></blockquote>
+          <figcaption>
+            <span class="avatar mono" aria-hidden="true">SA</span>
+            <span><strong>Samuel Arcanjo</strong><span class="rec-role">DevOps · SRE · Linux · Docker · Nginx · Prometheus · Grafana</span><span class="rec-rel mono" data-i18n="recs.r4.rel">Trabalhou na mesma equipe · mar 2024</span></span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="recs-foot mono"><span class="recs-note" data-i18n="recs.note"></span> <a href="https://www.linkedin.com/in/lucas-cardoso-alecrim/details/recommendations/" target="_blank" rel="noopener" data-i18n="recs.more">Ver no LinkedIn →</a></p>
+    </section>
+
     <!-- CONTATO -->
     <section id="contato" class="section wrap contact">
-      <h2 class="section-title"><span class="mono num">05.</span> <span data-i18n="contact.title">Vamos conversar</span></h2>
+      <h2 class="section-title"><span class="mono num">07.</span> <span data-i18n="contact.title">Vamos conversar</span></h2>
       <p class="lead" data-i18n="contact.lead">Aberto a oportunidades em DevOps, SRE e Cloud — remoto ou em Recife. Respondo rápido.</p>
       <ul class="contact-list">
         <li><a href="mailto:lucascardosoalecrim99@gmail.com"><span class="mono k">email</span><span>lucascardosoalecrim99@gmail.com</span></a></li>
