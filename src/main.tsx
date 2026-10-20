@@ -8,6 +8,7 @@ import '@fontsource/inter/latin-700.css';
 import '@fontsource/jetbrains-mono/latin-400.css';
 import '@fontsource/jetbrains-mono/latin-600.css';
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import './site.css';
 import { theme } from './theme';
 import { LangProvider } from './i18n';

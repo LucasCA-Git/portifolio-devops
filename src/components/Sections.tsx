@@ -24,7 +24,7 @@ export function About() {
   const stats: [string, Key][] = [
     ['2+', 'about.s1'],
     ['3', 'about.s2'],
-    ['6', 'about.s3'],
+    ['20+', 'about.s3'],
     ['PT/EN', 'about.s4'],
   ];
   return (
@@ -144,42 +144,6 @@ export function Experience() {
           </li>
         ))}
       </ol>
-    </section>
-  );
-}
-
-export function Education() {
-  const { t } = useLang();
-  const certs: [string, string, string][] = [
-    ['2025', 'Oracle Cloud Infrastructure — Certified Foundations Associate', 'Oracle'],
-    ['325h', 'Data Science', 'Alura · Oracle Next Education'],
-    ['144h', t('edu.c3'), 'Softex Pernambuco'],
-    ['2024', 'AWS Educate — Getting Started with Cloud Ops', 'AWS'],
-    ['2024', 'AWS Educate — Getting Started with Databases', 'AWS'],
-    ['2024', 'AWS Educate — Getting Started with Serverless', 'AWS'],
-  ];
-  return (
-    <section id="formacao" className="section wrap">
-      <SectionTitle num="05">{t('edu.title')}</SectionTitle>
-      <div className="edu-grid">
-        <article className="card edu">
-          <p className="mono kicker">{t('edu.degreeTag')}</p>
-          <h3>{t('edu.degree')}</h3>
-          <p>FICR — Faculdade Católica Imaculada Conceição do Recife</p>
-          <p className="mono when">{t('edu.when')}</p>
-        </article>
-        <ul className="certs">
-          {certs.map(([yr, name, org]) => (
-            <li key={name}>
-              <span className="mono yr">{yr}</span>
-              <div>
-                <strong>{name}</strong>
-                <span>{org}</span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
-import { About, Contact, DevOps, Education, Experience, Recommendations, Stack } from './components/Sections';
+import { About, Contact, DevOps, Experience, Recommendations, Stack } from './components/Sections';
+import { Education } from './components/Education';
 import { useLang } from './i18n';
 import { useReveal } from './hooks';
 
