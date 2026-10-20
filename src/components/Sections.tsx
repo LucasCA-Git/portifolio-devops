@@ -160,7 +160,6 @@ const RECS: Rec[] = [
   { id: 'r5', ini: 'ES', name: 'Elias Santana Jr', role: 'Desenvolvedor Full Stack · TypeScript · NestJS · React · Next.js · Python · Docker' },
   { id: 'r1', ini: 'GA', name: 'Guilherme Ailton', role: 'Desenvolvedor Full Stack · Node.js · TypeScript · React · Docker' },
   { id: 'r2', ini: 'MB', name: 'Marcos Barros', role: 'Engenheiro de Plataforma · DevOps · Kubernetes · Terraform' },
-  { id: 'r3', ini: 'CC', name: 'Clediuel Carneiro', role: 'Analista de Service Desk · Suporte N1/N2 · Gestão de Incidentes' },
   { id: 'r4', ini: 'SA', name: 'Samuel Arcanjo', role: 'DevOps · SRE · Linux · Docker · Nginx · Prometheus · Grafana' },
 ];
 
