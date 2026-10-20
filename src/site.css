@@ -192,6 +192,7 @@ h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 700; letter-spacing: -.
 /* RECOMENDAÇÕES */
 .recs-lead { margin-bottom: 30px; }
 .recs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.recs .rec:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .rec {
   margin: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 22px;
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px;
