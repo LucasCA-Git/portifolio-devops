@@ -150,8 +150,11 @@ export function Experience() {
 
 type Rec = { id: string; ini: string; name: string; role: string };
 
-// Recomendação em destaque: supervisor direto no cargo atual
-const FEATURED: Rec = { id: 'r6', ini: 'MR', name: 'Marcello Raposo', role: 'DevOps Engineer · SRE · Kubernetes · Azure · Terraform · CI/CD' };
+// Recomendações em destaque: supervisores diretos no cargo atual
+const FEATURED: Rec[] = [
+  { id: 'r7', ini: 'AO', name: 'Alex Odilon', role: 'DevOps & SRE Team Leader · Cloud Architect (Azure/AWS) · FinOps · Kubernetes' },
+  { id: 'r6', ini: 'MR', name: 'Marcello Raposo', role: 'DevOps Engineer · SRE · Kubernetes · Azure · Terraform · CI/CD' },
+];
 
 const RECS: Rec[] = [
   { id: 'r5', ini: 'ES', name: 'Elias Santana Jr', role: 'Desenvolvedor Full Stack · TypeScript · NestJS · React · Next.js · Python · Docker' },
@@ -187,7 +190,9 @@ export function Recommendations() {
     <section id="recomendacoes" className="section wrap">
       <SectionTitle num="06">{t('recs.title')}</SectionTitle>
       <p className="lead recs-lead">{t('recs.lead')}</p>
-      <RecCard r={FEATURED} featured />
+      {FEATURED.map((r) => (
+        <RecCard key={r.id} r={r} featured />
+      ))}
       <div className="recs">
         {RECS.map((r) => (
           <RecCard key={r.id} r={r} />
