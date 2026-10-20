@@ -148,7 +148,12 @@ export function Experience() {
   );
 }
 
-const RECS: { id: string; ini: string; name: string; role: string }[] = [
+type Rec = { id: string; ini: string; name: string; role: string };
+
+// Recomendação em destaque: supervisor direto no cargo atual
+const FEATURED: Rec = { id: 'r6', ini: 'MR', name: 'Marcello Raposo', role: 'DevOps Engineer · SRE · Kubernetes · Azure · Terraform · CI/CD' };
+
+const RECS: Rec[] = [
   { id: 'r5', ini: 'ES', name: 'Elias Santana Jr', role: 'Desenvolvedor Full Stack · TypeScript · NestJS · React · Next.js · Python · Docker' },
   { id: 'r1', ini: 'GA', name: 'Guilherme Ailton', role: 'Desenvolvedor Full Stack · Node.js · TypeScript · React · Docker' },
   { id: 'r2', ini: 'MB', name: 'Marcos Barros', role: 'Engenheiro de Plataforma · DevOps · Kubernetes · Terraform' },
@@ -156,27 +161,36 @@ const RECS: { id: string; ini: string; name: string; role: string }[] = [
   { id: 'r4', ini: 'SA', name: 'Samuel Arcanjo', role: 'DevOps · SRE · Linux · Docker · Nginx · Prometheus · Grafana' },
 ];
 
+function RecCard({ r, featured = false }: { r: Rec; featured?: boolean }) {
+  const { t } = useLang();
+  return (
+    <figure className={`rec${featured ? ' featured' : ''}`}>
+      {featured && <span className="rec-badge mono">{t('recs.featured')}</span>}
+      <blockquote>
+        <p>{t(`recs.${r.id}.q` as Key)}</p>
+      </blockquote>
+      <figcaption>
+        <span className="avatar mono" aria-hidden="true">{r.ini}</span>
+        <span>
+          <strong>{r.name}</strong>
+          <span className="rec-role">{r.role}</span>
+          <span className="rec-rel mono">{t(`recs.${r.id}.rel` as Key)}</span>
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
+
 export function Recommendations() {
   const { t } = useLang();
   return (
     <section id="recomendacoes" className="section wrap">
       <SectionTitle num="06">{t('recs.title')}</SectionTitle>
       <p className="lead recs-lead">{t('recs.lead')}</p>
+      <RecCard r={FEATURED} featured />
       <div className="recs">
         {RECS.map((r) => (
-          <figure className="rec" key={r.id}>
-            <blockquote>
-              <p>{t(`recs.${r.id}.q` as Key)}</p>
-            </blockquote>
-            <figcaption>
-              <span className="avatar mono" aria-hidden="true">{r.ini}</span>
-              <span>
-                <strong>{r.name}</strong>
-                <span className="rec-role">{r.role}</span>
-                <span className="rec-rel mono">{t(`recs.${r.id}.rel` as Key)}</span>
-              </span>
-            </figcaption>
-          </figure>
+          <RecCard key={r.id} r={r} />
         ))}
       </div>
       <p className="recs-foot mono">

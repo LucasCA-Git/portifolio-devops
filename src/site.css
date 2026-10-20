@@ -220,6 +220,21 @@ h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 700; letter-spacing: -.
 .recs-lead { margin-bottom: 30px; }
 .recs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .recs .rec:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.rec.featured {
+  margin: 0 0 16px; padding: 30px 32px;
+  background: linear-gradient(135deg, rgba(57,217,138,.12), rgba(57,217,138,.03) 55%), var(--surface);
+  border: 1px solid rgba(57,217,138,.6);
+  box-shadow: 0 0 0 1px rgba(57,217,138,.15), 0 18px 50px -22px rgba(57,217,138,.45);
+}
+.rec.featured:hover { border-color: var(--accent); }
+.rec.featured::before { color: rgba(57,217,138,.4); font-size: 5rem; }
+.rec.featured blockquote p { font-size: 1.08rem; color: #e3ebf3; line-height: 1.7; }
+.rec.featured .avatar { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.rec.featured figcaption { border-top-color: rgba(57,217,138,.3); }
+.rec-badge {
+  align-self: flex-start; padding: 4px 10px; font-size: .72rem; font-weight: 600; color: var(--accent-ink);
+  background: var(--accent); border-radius: 999px; letter-spacing: .02em;
+}
 .rec {
   margin: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 22px;
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px;
